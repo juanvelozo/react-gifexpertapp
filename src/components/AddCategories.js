@@ -8,14 +8,14 @@ const AddCategories = ({setCategories}) => {
     }
     const handleSubmit= (e) => {
         e.preventDefault();
-        if(inputValue.trim().length >2){
+        if(inputValue.trim().length >1){
             setCategories( categories => [ inputValue, ...categories, ] );
             setInputValue('');
         }
     }
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="text" value={inputValue} onChange={handleIpuntChange}/>
+    <form className="search" onSubmit={handleSubmit}>
+      <input className="result" type="text" placeholder="Buscar gifs" value={inputValue} onChange={handleIpuntChange}/>
     </form>
   );
 };

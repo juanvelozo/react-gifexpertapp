@@ -4,14 +4,15 @@ import { GifGrid } from "./components/GifGrid";
 
 const GifExpertApp = () => {
   // const categories = ['memes','anime','fun','movies'];
-  const [categories, setCategories] = useState(["Memes"]);
+  const [categories, setCategories] = useState(["Search"]);
   // const handleAdd = () => {
   //     setCategories( [...categories, 'sad'] );
   // }
 
   return (
     <>
-      <h2>GifExpertApp</h2>
+      <h2 className="title">GifExpertApp</h2>
+      <p className="description">Buscador de Gifs online</p>
       <AddCategories setCategories={setCategories} />
       <hr />
       <ol>

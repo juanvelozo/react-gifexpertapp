@@ -1,27 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 *{
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.2rem;
+  color: black;
+  margin: 0%;
 }
-
 body{
-  padding: 1.4rem;
-}
+  padding: 2rem;
+  background: linear-gradient(to top, #c2e59c, #64b3f4);}
 
 input{
+  align-items: center;
   font-size: 1.2rem;
-  width: 100%;
-  color: gray;
+  box-shadow: 3px 3px black ;
+  margin-bottom: 10px;
+  width: auto;
+  transition: all 0.5s;
 }
-
+input:hover{
+  width: 50%;
+}
+.title{
+  text-align: center;
+  font-size: 2.2rem;
+}
+.description{
+  color: black;
+  font-weight: 400;
+  height: 1.3rem;
+  margin: 1rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.search{
+  padding: 1rem;
+}
 .card{
-  align-content: center;
-  border: 1px solid #000000;
-  border-radius: 1rem;
+  align-content: auto;
+  max-width: 550px;
+  border: 1px #000000 solid;
+  border-radius: 2rem;
+  height: 480px;
+  justify-content: center;
   margin: 1rem 0.2rem;
   overflow: hidden;
+  width: auto;
 }
 .card p{
+  font-weight: bold;
   padding: 1rem 0.5rem;
-  font-size: 1.3rem;
+  text-align: center;
+  text-transform: capitalize;
 }
 .card-grid{
   display: flex;
